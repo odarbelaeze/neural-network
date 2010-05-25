@@ -54,7 +54,7 @@ class NeuralNetwork:
     self.learningRate = 0.1
     self.numHiddenNeurons = numHiddenNeurons
     self.hiddenNeurons = [Neuron(self.learningRate,numInputs) for r in range(numHiddenNeurons)]
-    self.outputNeurons = [Neuron(self.learningRate,len(self.hiddenNeurons)) for r in range(2)]
+    self.outputNeurons = [Neuron(self.learningRate,len(self.hiddenNeurons)) for r in range(numOutputs)]
 
   def test():
     pass
